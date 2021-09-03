@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333333;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.box {
+
+}
+
+.signal-box {
+    width: 100px;
+}
+
+.signal-box-img {
+    width: 100px;
+}
+
+.help-box {
+    padding: 10px;
+    border: 1px #333333 dashed;
+}
+
+.graph-box {
+    margin-left: 0px;
+}
+
+.taewak-box {
+    margin-left: 20px;
+}
+
+.img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    text-align: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+}
+
+.signal-box-img img {
+    width: 100px;
+    height: 100px;
+}
+
+.ear-cap img {
+    width: 150px;
+    height: 150px;
+}
+
+.taewak-box img {
+    width: 150px;
+    height: 150px;
+}
+
+.graph-box img {
+    width: 150px;
+    height: 150px;
+}
+
+.ear-cap-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    background-color: #F4A62A;
+    margin: 5px;
+}
+
+.left, .right {
+    width: 40px;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.help-signal-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.help-signal {
+    background-color: #EA3449;
+}
+
+.main-gosu img {
+    width: 200px;
+    height: 200px;
+}
