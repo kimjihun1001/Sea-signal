@@ -8,13 +8,14 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
     </style>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>바당시그널</title>
 </head>
 <body>
     <div class="container">
         <div class="box help-box">
             <div class="help-signal-box">
-                <button class="help-signal">구조 신호</button>
+                <button class="emergency-alarm help-signal" onclick="emergencyAlarm.play()">구조 신호</button>
             </div>
             <div>
                 <div class="img-box">
@@ -37,7 +38,7 @@
         </div>
 
         <div class="signal-box">
-            <div class="signal-box-img hidden">
+            <div class="signal-box-img hidden" id="signal">
                 <img src="img/signal.gif" alt="">
             </div>
         </div>
@@ -56,8 +57,8 @@
                     <img src="img/earcap01.png" alt="">
                 </div>
                 <div class="ear-cap-button">
-                    <button class="left">두번</button>
-                    <button class="right">길게</button>
+                    <button class="workstart left" onclick="workstart.play()">두번</button>
+                    <button class="emergency right" onclick="showSignal()">길게</button>
                 </div>
             </div>
         </div>
@@ -67,8 +68,8 @@
                     <img src="img/earcap02.png" alt="">
                 </div>
                 <div class="ear-cap-button">
-                    <button class="left">두번</button>
-                    <button class="right">길게</button>
+                    <button class="workend left" onclick="workend.play()">두번</button>
+                    <button class="speak right" onclick="speak.play()">길게</button>
                 </div>
             </div>
         </div>
@@ -107,7 +108,7 @@
             </div>
         </div>
     </div>
-    
     <script src="main.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
